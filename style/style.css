@@ -43,6 +43,7 @@ section h2{
     color: var(--text-color-2); 
     font-weight: 800;  
     text-align: center;
+    font-size: 28px;
 }
 /*p classı eklediğim tüm sectionların içindeki p ye ortak stil*/
 .section-white.p,
@@ -225,7 +226,7 @@ section h2::after {
     height: 100%;
     background-color: #f6f6f6;
     z-index: -2;
-    clip-path: polygon(0 0, 65% 0, 65% 70%, 20% 70%);
+    clip-path: polygon(0 0, 65% 0, 65% 68%, 20% 68%);
 }
 /*sectionun arkada kalmaması için indexini 2 verdim*/
 .section-white.classes{
@@ -832,6 +833,9 @@ del {
 }
 /*responsive tasarım 576px altında çalışacak*/
 @media (max-width: 576px) {
+    section h2{
+        font-size: 26px;
+    }
     .header {
     height: 60vh;
     background-size:cover;
@@ -934,7 +938,7 @@ del {
     }
     .section-white.classes::after {
         left: 30%; 
-        clip-path: polygon(0 0, 70% 0, 70% 65%, 20% 65%);
+        clip-path: polygon(0 0, 70% 0, 70% 63%, 20% 63%);
     }
     .classes-choosen{
         flex-direction: column;
