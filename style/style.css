@@ -1,0 +1,1125 @@
+/*Genel sayfa düzenlemeleri başta sıfırlıyorum.*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Exo 2", sans-serif;
+}
+/*x ekseninde taşmayı engelliyorum*/
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/*genel seçici olarak kullanacağım renkleri veriyorum*/
+:root{
+    --background-color-1: #ffffff;
+    --background-color-2:#f1f8ff;
+    --background-color-3:#f39c11;
+    --text-color-1:#ffffff;
+    --text-color-2:#395389;
+    --text-color-3:#616161;
+    --text-color-4:#1b1f22;
+}
+/*arka planı beyaz olarak kullanacağım section*/
+.section-white{
+    position: relative;
+    background-color: var(--background-color-1);
+    padding: 65px 0 35px 0;
+    width: 100%;
+}
+
+/*arka planı mavi olarak kullanacağım  section*/
+.section-blue{
+    background-color: var(--background-color-2);
+    position: relative;
+    padding: 65px 0 35px 0;
+    width: 100%;
+}
+/*tüm sectionlardaki h2 lere ortak stil veriyorum */
+section h2{
+    color: var(--text-color-2); 
+    font-weight: 800;  
+    text-align: center;
+}
+/*p classı eklediğim tüm sectionların içindeki p ye ortak stil*/
+.section-white.p,
+.section-blue.p{
+    color: var(--text-color-3);
+    font-weight: 600;   
+    text-align: center;
+}
+section h2::after {
+    content: '';
+    display: block;
+    width: 70px; 
+    height: 6px; 
+    background-color: var(--background-color-3);
+    margin: 8px auto 34px; 
+    border-radius: 3px;
+  }
+/*header düzenlemeleri*/
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url('../images/hero-man.jpg');
+    background-position:center;
+    height: 97vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+/*navbar düzenlemeleri*/
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 390px 0 250px; 
+    position: fixed; 
+    z-index: 200;
+}
+.navbar-scroll{
+    background-color: #355592;
+}
+/*navbar içindeki unsorted list düzenlemeleri*/
+.navbar ul{
+    display: flex;
+    gap: 26px;
+}
+/*her bir a tagına müdahale*/
+.navbar ul a{
+    color: var(--text-color-1);
+    font-size: 15px;
+    font-weight: 800;
+}
+/*navbar içindeki son a tagına özel müdahale*/
+.navbar ul li:last-child a{
+    background-color: var(--background-color-3);
+    align-items: first baseline;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+/*logo içindeki img düzenlemeleri*/
+.logo img{
+    width: 75%;  
+    padding: 0;
+    margin: 0;
+}
+/*Home */
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    padding-left: 250px;
+    position: relative;
+    width: 80%;
+    margin-top: 150px;
+
+}
+/*Home içerisindeki button ile ilgili düzenlemeler*/
+.home-button{
+    display:inline-block;
+    background-color: #355494;
+    font-weight: 700;
+    color: var(--text-color-1);
+    border-radius: 3px;
+    padding: 6px 14px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.home-top-h1{
+    width: 60%;
+}
+/*Home içerisindeki başlık ile ilgili düzenlemeler*/
+.home-top-h1 h1{
+    color: var(--text-color-1);
+    font-size: 76px;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: 1.3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 8px;
+}
+/*Home içerisindeki p ile ilgili düzenlemeler*/
+.home p{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--text-color-1);
+    font-weight: 700;
+    padding: 5px 28px 5px 16px;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+/*Butonların oldugu div ile ilgili düzenlemeler*/
+.home-buttons{
+    display: flex;
+    justify-content: start;
+    padding-left: 20px;
+    gap: 40px;
+    font-weight: 700;
+    font-size: 20px;
+}
+/*sign up butonu ile ilgili düzenlemeler*/
+.home-buttons .sign-up{
+    background-color: var(--text-color-2);
+    color: var(--text-color-1);
+    border-radius: 3px;
+    padding: 8px 18px;
+    
+}
+/*details butonu ile ilgili düzenlemeler*/
+.home-buttons .details{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--text-color-1);
+    border-radius: 3px;
+    padding: 8px 18px;
+    border: 2px solid var(--text-color-1);
+}
+/*boxes divinin düzenlenmesi*/
+.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.section-blue.pad{
+    padding: 34px;
+}
+/*her bir boxun düzenlenmesi*/
+.home-box{
+    background-color: var(--background-color-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 15%;
+    height: auto;
+    padding: 12px 16px 22px 16px;
+    gap: 18px;
+}
+/*box içindeki h2 nin stili*/
+.home-box span{
+    font-size: 24px;
+    color: var(--text-color-2);
+    font-weight: 900;
+}
+/*box içindeki p nin stili*/
+.home-box p{
+    color: var(--text-color-4);
+    font-size: 18px;
+    font-weight: 900;
+}
+/*background için clip-path verdim*/
+.section-white.classes::after {
+    content: "";
+    position: absolute;
+    left: 35%; /* Sola hizala */
+    top: 0;
+    width: 100%; /* Mobilde taşmayı engelle */
+    height: 100%;
+    background-color: #f6f6f6;
+    z-index: -2;
+    clip-path: polygon(0 0, 65% 0, 65% 70%, 20% 70%);
+}
+/*sectionun arkada kalmaması için indexini 2 verdim*/
+.section-white.classes{
+    z-index: 2;
+}
+.classes-container{
+    width: 100%;
+}
+.classes-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+/*div deki herbir p tagına ortak stil verdim*/
+.classes-info-p p{
+    color: var(--text-color-3);
+    font-weight: 600;
+    text-align: center;
+}
+/* p tagına margin-top verdim*/
+.classes-info-p p{
+    margin-top: 4px;
+}
+/*butonların olduğu divin düzenlenmesi hizalanması*/
+.classes-buttons{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 150px;
+    margin-top: 40px;
+}
+/*tıklanan butona ekleyeceğim stiller*/
+.highlight {
+    background-color: var(--background-color-3)!important;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 4px var(--background-color-3));
+    position: relative;
+}
+/*tıklanan butonun altında çıkacak üçgen*/
+.highlight::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--background-color-3) transparent transparent transparent;
+    transform: translateX(-50%);
+}
+/*her bir butona ortak stil verdim*/
+.classes-buttons button{
+    background-color: var(--text-color-2);
+    color: var(--text-color-1);
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-weight: 700;
+    border: none;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+/*değişecek olan içeriğin olduğu divin genel stili*/
+.classes-choosen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 140px;
+    line-height: 1.5;
+}
+/*değişecek infonun olduğu divin stili*/
+.classes-choosen-info{
+    width: 26%;
+    text-align: justify; 
+}
+/*değişecek infonun h3 tagına müdahale*/
+.classes-choosen-info h3{
+    color: var(--text-color-3);
+    font-weight: 800;
+    margin-bottom: 14px;
+    font-size: 22px;
+}
+/*değişecek infonun p tagına müdahale*/
+.classes-choosen-info p{
+    color: var(--text-color-3);
+    font-weight: 600;
+}
+/*burada her bir p tagı arasına boşluk verdim*/
+.classes-choosen-info #info-desc{
+    margin-bottom: 28px;
+}
+.classes-choosen-info #info-time-title{
+    margin-bottom: 20px;
+}
+.classes-choosen-info #info-time{
+    margin-bottom: 20px;
+}
+.classes-choosen-info #info-time-add{
+    margin-bottom: 20px;
+}
+/*imgnin içinde bulunduğu divin boyutlandırması*/
+.classes-choosen-photo{
+    width: 22%;
+}
+/*divin içindeki img nin boyutlandırılması*/
+.classes-choosen-photo img{
+    width: 100%;
+    object-fit: cover;
+}
+/*bmi hesabının yapılacağı divin stili*/
+.bmi-calculator{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 140px;
+    line-height: 1.5;
+}
+/*sol taraftaki infolar için oluşturduğum divin stili*/
+.bmi-info{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+/*sol taraftaki üst bilgiler için oluşturduğum divin boyutlandırılması*/
+.bmi-info-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+/*iki p arasındaki boşluk için 1. p hariç diğer p'ye üst margin*/
+.bmi-info-top p~p{
+    margin-top:20px
+}
+/*sola yaslı olacağı için genel p stilini kullanmadım*/
+.bmi-info-top p{
+    color: var(--text-color-3);
+    font-weight: 600; 
+}
+/*bmi-info-top içindeki h3 tagına müdahale*/
+.bmi-info-top h3{
+    color: var(--text-color-2);
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 14px;
+}
+/*weight ve height inputlarının olduğu divin genel stili*/
+.bmi-inputs{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+}
+.bmi-input{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+/*bmi-input içindeki her bir inputun stili*/
+.bmi-inputs input{
+    margin: 0 1px;
+    width: 80%;
+    padding: 2px 2px;
+    border-radius: 3px;
+    border: 1.7px solid  rgb(69, 68, 68);
+}
+/*bmi-img divinin stili*/
+.bmi-img{
+    width: 32%;
+    position: relative;
+    display: inline-block;
+}
+/*bmi-img içindeki img'nin boyutlandırılması*/
+.bmi-img img{
+    width: 100%;
+    object-fit: cover;
+}
+/*bmi hesabında resmin altında gözükecek olan imleç*/
+#bmi-indicator {
+    position: absolute;
+    bottom: -20px; 
+    left: 25px;
+    transition: left 0.5s ease-in-out;
+    width: 20px;
+    height: 20px;
+    background: var(--background-color-3);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+/*genel kapsayıcı içindeki p taglerinin stili*/
+.trainers-p p{
+    line-height: 1.5;
+}
+/*her bir boxun olduğu genel kapsayıcının stili*/
+.trainers-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 70px;
+}
+/*boxların ortak stili*/
+.trainer-box{
+    position: relative;
+    width: 15%;
+    border-radius: 6px;
+    border: 2px solid var(--background-color-3);
+}
+/* Üst Çubuk */
+.trainer-box .top-bar {
+    content: "";
+    position: absolute;
+    top: -7.5px;
+    left: 50%;
+    width: 60px;
+    height: 6px;
+    background-color: var(--text-color-2);
+    transform: translateX(-50%);
+}
+
+/* Alt Çubuk */
+.trainer-box .bottom-bar {
+    content: "";
+    position: absolute;
+    bottom: -7.5px;
+    left: 50%;
+    width: 60px;
+    height: 6px;
+    background-color: var(--text-color-2);
+    transform: translateX(-50%);
+}
+
+/* Sol Çubuk */
+.trainer-box .left-bar {
+    position: absolute;
+    top: 50%;
+    left: -8px; 
+    width: 6px;  
+    height: 80px;
+    background-color: var(--text-color-2);
+    transform: translateY(-50%);
+}
+
+/* Sağ Çubuk */
+.trainer-box .right-bar {
+    position: absolute;
+    top: 50%;
+    right: -8px; /* Sağ çubuğu biraz daha sağa kaydırdık */
+    width: 6px;  /* Kalınlığı artırıldı */
+    height: 80px;
+    background-color: var(--text-color-2);
+    transform: translateY(-50%);
+}
+/*kutuların içindeki imglerin düzenlenmesi*/
+.trainer-box img{
+    width: 100%;
+    object-fit:cover;
+    display: block;
+    border-radius: 4px;
+}
+/* İlk kutunun sol çubuğu ve son kutunun sağ çubuğu için özel ayar */
+.trainers-boxes .trainer-box:first-child .left-bar {
+    left: -8px; /* İlk kutunun sol çubuğu biraz daha sola */
+    width: 7px; 
+}
+
+.trainers-boxes .trainer-box:last-child .right-bar {
+    right: -8px; /* Son kutunun sağ çubuğu biraz daha sağa */
+    width: 7px; 
+}
+/*kutuya hover olununca gözükecek olan divin düzenlenmesi
+başta gözükmemesi için z-indexini -1 verdim.*/
+.trainers-layer {
+    color: var(--text-color-1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content:center;
+    z-index: -1;
+    background-color: var(--text-color-2);
+    clip-path: polygon(
+        5% 25%, 20% 25%, 20% 10%, 80% 10%, 80% 25%, 95% 25%, 
+        95% 75%, 80% 75%, 80% 90%, 20% 90%, 20% 75%, 5% 75%
+    );
+}
+/*boxa hover olununca trainers-layer görünür olur*/
+.trainer-box:hover .trainers-layer{
+    z-index: 2;
+}
+/*boxa hover olununca sol sağ ve alttaki çubukların boyutunun ve konumunun değişmesi*/
+.trainer-box:hover .left-bar{
+    top: 75%;
+    height: 150px;
+    transform: translateY(-80%);
+}
+.trainer-box:hover .right-bar{
+    top: 75%;
+    height: 150px;
+    transform: translateY(-80%);
+}
+.trainer-box:hover .bottom-bar{
+    left: 50%;
+    width: 160px;
+    transform: translateX(-50%);
+}
+
+/*kutuların oldugu genel divin stili hizalanması*/
+.purchase-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+/*her bir kutunun ortak stili*/
+.purchase-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    padding: 0 0 6px 0;
+}
+/*kutu içindeki resimlerin oturtulması boyutlandırılması*/
+.purchase-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+/*kutunun altındaki kısmın stili*/
+.box-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(56, 56, 56);
+}
+/*kutu altındaki p taglerinin stili*/
+.box-bottom p {
+    font-size: 20px;
+}
+/*kutu altındaki span taglerinin stili*/
+.box-bottom span {
+    font-size: 12px;
+    font-weight: 800;
+}
+/*üstü çizili span için del tagının stili*/
+del {
+    text-decoration: line-through;
+    color: rgb(56, 56, 56);
+    font-weight: bold;
+}
+/*iconun ve add to card yazısının oldugu genel divin stili*/
+.icon{ 
+    display: flex; 
+    flex-direction: row; 
+    justify-content:space-between; 
+    align-items: center; 
+    position: relative; 
+} 
+/*icon divinin içindeki ilk spanın solda olması için*/
+.icon span:nth-child(1) { 
+    position: absolute; 
+    left: -50px; 
+}
+/*review içindeki class verdiğim p taglerine genel stil */
+.review-p-1,
+.review-p-2{
+    color: var(--text-color-3);
+    font-weight: 600;   
+    text-align: center;
+}
+/*sayfadaki genel kapsayıcının düzenlenmesi*/
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 5%; 
+    width: 100%; 
+}
+.review-p{
+    line-height: 1.4;
+}
+/*sol ve sağ kutunun oldugu divin düzenlenmesi*/
+.review-boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 60px 0 80px 0;
+}
+/*sol ve sağ kutunun ortak stili */
+.review-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 46%;
+    max-width: 460px;
+    position: relative;
+}
+/*kutuların üst kısmı için oluşturulan divin ortak stili*/
+.review-top {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+/*kutuların üst kısmındaki infolar içi oluşturulan ortak stil*/
+.review-top-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+/*kutuların içindeki img divinin stili*/
+.review-img {
+    width: 50px; 
+    height: 40%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/*img divinini içindeki img nin boyutlandırılması ve stili*/
+.review-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/*genel stil vermediğim p taglerine müdahale*/
+.review-top-info p{
+    color: rgb(47, 47, 47);
+    font-weight: 700;
+}
+.review-top-info span{
+    font-size: 14px;
+    color: rgb(47, 47, 47);
+}
+/*kuutların alt kısmı için oluşturduğum divin stili*/
+.review-bottom{
+    background-color: var(--text-color-2);
+    padding: 12px 24px;
+    line-height: 1.4;
+    position: relative;
+    width: 100%;
+}
+/*kutuların sol altındaki üçgen*/
+.review-bottom::before {
+    content: "";
+    position: absolute;
+    bottom: -34.2px; /* Daha belirgin olması için artırıldı */
+    left: -29.9px;
+    width: 65px;
+    height: 35px;
+    background-color:#395289a7;
+    clip-path: polygon(100% 0, 45% 0, 100% 100%);
+}
+
+/*Kutuların sağ altındaki*/
+.review-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: -35.2px; /* Daha belirgin olması için artırıldı */
+    width: 70px;
+    height: 35px;
+    background-color:#395289a7;
+    right: -39px;
+    clip-path: polygon(45% 0, 0 0, 0 100%);
+}
+/*ortak stil vermediğim p tagına özel stil*/
+.review-bottom p{
+    color: var(--text-color-1);
+    font-weight: 400;  
+}
+/*sayfanın genel kapsayıcısının stili*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/*form ve mapin içinde olduğu divin stili*/
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 60px;
+}
+/*sol taraftakik formun ve sağ taraftaki mapin kapsayıcısının ortak stili*/
+.contact-div, .map-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%; 
+    box-sizing: border-box;
+}
+/*contact kısmının üstü için açtığım divin stili*/
+.contact-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+/*genel p tagını uygulamayacağım için sınıf verdiğim p'lerin stili*/
+.contact-top .phone-p,
+.contact-top .email-p {
+    font-size: 13px;
+    margin-top: 8px;
+}
+/*contact kısmının altı için açtığım divin stili*/
+.contact-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+/*form elemanlarının içinde olduğu divin genel stili*/
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+/*form elemanlarının stili*/
+.form-group input,
+.form-group textarea {
+    background-color: var(--background-color-2);
+    border: none;
+    width: 100%;
+    padding: 6px 180px 6px 8px;
+    box-sizing: border-box;
+}
+/*textareanın özel stili*/
+.form-group textarea {
+    resize: vertical;
+    padding: 10px 180px 10px 8px;
+    height: 100px;
+}
+/*iframe'in boyutlandırılması*/
+.map-div iframe {
+    width: 100%; 
+    height: 300px;
+}
+/*footerın renk ve genel stili*/
+.footer{
+    background-color: var(--text-color-2);
+    color: var(--text-color-1);
+    padding-bottom:16px ;
+}
+/*logonun boyutlandırılması*/
+.footer-top img{
+    width: 180px;
+}
+/*logo ve altındaki p tagının stili*/
+.footer-top{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0 200px;
+}
+/*linklerin olduğu genel divin stili*/
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+/*linklerin olduğu divlerin ortak stili*/
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+/*linklerin rengi*/
+.footer-links a{
+    color: var(--text-color-1);
+}
+.footer-bottom h3{
+    font-size: 22px;
+}
+/*Normalde hamburger menüyü gizliyorum*/
+.menu-hmbrgr {
+    display: none;
+    font-size: 34px;
+    cursor: pointer;
+}
+/*responsive tasarım 576px altında çalışacak*/
+@media (max-width: 576px) {
+    .header {
+    height: 60vh;
+    background-size:cover;
+    background-position:center;
+    }   
+    /*576 px altına indiği an hamburger iconu gözükür*/
+    .menu-hmbrgr {
+        display: block;
+        color: #ffffff;
+    }
+    /*navarı column olacak şekilde ayarlıyorum*/
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        padding: 10px 0;
+    }
+    /*show classı sayesinde icona tıklandığında navar gözükücek*/
+    .navbar ul.show {
+        display: flex;
+    }
+    .navbar ul li {
+        padding: 10px 0;
+    }
+    /*normal menüde listenin son elemanının özel stili vardı onu değiştiriyorum*/
+    .navbar ul li:last-child a{
+        color: var(--text-color-1);
+        font-size: 15px;
+        font-weight: 800;
+        background-color: transparent;
+        align-items: first baseline;
+        text-transform:none;
+        padding: 0;
+        border-radius: 0;
+    }
+    .logo img{
+        width: 90%;
+    }
+    .navbar{
+        padding: 0 50px 0 14px; 
+    }   
+    .home{
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+        padding:0 10px;
+        margin-top: 185px;
+    }
+    .home-top-h1{
+        width: 100%;
+    }
+    .home-top-h1 h1{
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: 0.5px;
+    }
+    .home p{
+        font-size: 18px;
+        padding: 4px 16px;
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
+    .home-button{
+        padding: 6px 18px;
+    }
+    .home-buttons{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+        gap: 4px;
+        font-weight: 800;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .home-buttons .sign-up,
+    .home-buttons .details{
+        width: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+    .boxes{
+        flex-direction: column;
+        width: 100%;
+    }
+    .home-box{
+        width: 100%;
+    }
+    .classes-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .classes-info-p{
+        width: 70%;
+    }
+    .section-white.classes::after {
+        left: 30%; 
+        clip-path: polygon(0 0, 70% 0, 70% 65%, 20% 65%);
+    }
+    .classes-choosen{
+        flex-direction: column;
+        align-items: flex-start !important;
+        width: 100%;
+        text-align: justify; 
+        gap: 20px; 
+        padding: 0;          
+    }
+    .classes-choosen-info{
+        width: 100%;
+        text-align: justify; 
+        padding:0 20px;
+    }
+    .classes-choosen-info #info-title,
+    .classes-choosen-info #info-time-title{
+        text-align: start;
+        font-size: 24px;
+    }
+    .classes-buttons{
+        flex-wrap: wrap;
+        gap: 40px;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .classes-buttons button{
+        padding: 8px 18px;
+        font-weight: 800;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+    .classes-choosen-photo{
+        margin-top: 0;
+        width: 100%;          
+    }
+    .bmi-calculator{
+        flex-direction: column;
+        align-items: start;
+        margin-top: 120px;
+        line-height: 1.5;
+        width: 100%;
+    }
+    .bmi-info{
+        width: 100%;
+        text-align: justify;
+        padding: 0 20px;
+    }
+    .bmi-info-top h3{
+        font-size: 34px;
+    }
+    .bmi-info-top p~p{
+        margin-top:20px
+    }
+    .bmi-inputs{
+        width: 100%;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    .bmi-input{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+    }
+    .bmi-inputs input{
+        margin: 0;
+        width: 80%;
+        padding: 2px 2px;
+    }
+    .bmi-img{
+        width: 100%;
+    }
+    .trainers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .trainers-p{
+        width: 70%;
+        line-height: 1.5;
+    }
+    .trainers-boxes{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 40px;
+    }
+    .purchase{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .purchase-p{
+        width: 75%;
+        line-height: 1.4;
+    }
+    .trainer-box{
+        width: 80%;        
+    }
+    .purchase-boxes {
+        flex-direction: column;
+    }
+    .purchase-box {
+        flex-direction: column;           
+        width: 75%;
+    }
+    .review {
+        display: flex;
+        flex-direction: column;
+        gap: 5%; 
+        width: 100%; 
+        padding: 0 10px;
+    }
+    .review-p{
+        line-height: 1.4;
+        width: 75%;
+    }
+    .review-boxes{
+        flex-direction: column;
+        gap: 60px;
+        margin: 40px 0 60px 0;
+    }
+    .review-box {
+        width: 100%;
+    }
+    .contact-div{
+        padding: 0 30px;
+    }
+    .contact-container{
+        flex-direction: column;
+        margin-top: 70px;
+    }
+    .contact-p{
+        width: 75%;
+        line-height: 1.4;
+    }
+    .contact-div, .map-div {
+        width: 100%; 
+    }
+    .contact-top {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .contact-top .phone-p,
+    .contact-top .email-p {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    .form-group {
+        margin-top: 20px;
+        gap: 30px;
+    }
+    .map-div iframe {
+        padding: 0 10px;
+    }
+    .footer-top{
+        align-items:flex-start;
+        justify-content: center;
+        width: 100%;
+        padding: 0 10px;
+        line-height: 1.4;
+    }
+    .footer p{
+        font-size: 12px;
+    }
+    .footer-links h3{
+        font-weight: 500;
+        font-size: 24px;
+    }
+}
+/*56px üzerinde hamburger menuyu gizliyorum*/
+@media (min-width: 577px) {
+    .menu-hmbrgr {
+        display: none !important;
+    }
+}
+
+
