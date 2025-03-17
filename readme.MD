@@ -1,8 +1,8 @@
-## 🏋️‍♂️ Sport Center Web Projesi
+# 🏋️‍♂️ Sport Center Web Projesi
 --------------------------------------------------------------------
 Bu proje, HTML, CSS ve JavaScript kullanılarak geliştirilmiş bir spor merkezi web sitesidir. Kullanıcılar spor merkezi hakkında bilgi alabilir, programları, hocaları görebilir ve hizmetler hakkında detaylara ulaşabilir.
 
-# 📌 Sayfanın Genel Yapısı
+## 📌 Sayfanın Genel Yapısı
 --------------------------------------------------------------------
 ✅ Ana Sayfa: Spor merkezinin tanıtımı ve hizmetlerine genel bakış.
 
@@ -16,7 +16,7 @@ Bu proje, HTML, CSS ve JavaScript kullanılarak geliştirilmiş bir spor merkezi
 
 ✅ Contact: Telefon numarası, email ve merkezle iletişime geçmek için bir form aynı zamanda merkezin konumunu görmelerini sağlayacak bir map bulunmakta.
 
-# 📌 Özellikler
+## 📌 Özellikler
 --------------------------------------------------------------------
 ✅ Classes sectionunda tıklanan butona göre ilgili resmin ve info kısmının değişmesi ve tıklanan butona özel stil eklenmesi.
 
@@ -30,13 +30,13 @@ Bu proje, HTML, CSS ve JavaScript kullanılarak geliştirilmiş bir spor merkezi
 
 ✅ Duyarlı Tasarım: Mobil ve masaüstü cihazlarla uyumlu yapı.
 
-# 🚀 Kullanılan Teknolojiler
+## 🚀 Kullanılan Teknolojiler
 --------------------------------------------------------------------
 ✅ HTML5 – Sayfa yapısını oluşturmak için.
 ✅ CSS3 – Tasarım ve stillendirme için.
 ✅ JavaScript – Dinamik işlemler ve etkileşimler için.
 
-# 📸 Proje Görselleri - Büyük Ekran Görünümü
+## 📸 Proje Görselleri - Büyük Ekran Görünümü
 ![Ana Sayfa](screenshots/home.png)
 ![Ana Sayfa](screenshots/home2.png)
 ![Classes](screenshots/classes.png)
@@ -47,7 +47,7 @@ Bu proje, HTML, CSS ve JavaScript kullanılarak geliştirilmiş bir spor merkezi
 ![Contact](screenshots/contact.png)
 ![Footer](screenshots/footer.png)
 
-# 📸 Proje Görselleri - Mobil Görünüm
+## 📸 Proje Görselleri - Mobil Görünüm
 ![Ana Sayfa](screenshots/home-r.png)
 ![Ana Sayfa](screenshots/home2-r.png)
 ![Classes](screenshots/classes-r.png)
