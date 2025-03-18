@@ -112,7 +112,7 @@ section h2::after {
     padding: 0;
     margin: 0;
 }
-/*Home */
+/*Home divinin düzenlenmesi*/
 .home{
     display: flex;
     flex-direction: column;
@@ -833,9 +833,11 @@ del {
 }
 /*responsive tasarım 576px altında çalışacak*/
 @media (max-width: 576px) {
+    /*genel başlıkları küçülttüm*/
     section h2{
         font-size: 26px;
     }
+    /*headerı yeniden boyutlandırıyorum*/
     .header {
     height: 60vh;
     background-size:cover;
@@ -876,12 +878,15 @@ del {
         padding: 0;
         border-radius: 0;
     }
+    /*logoyu küçültüyorum*/
     .logo img{
         width: 90%;
     }
+    /*navbarın paddingi ayarlıyorum*/
     .navbar{
         padding: 0 50px 0 14px; 
-    }   
+    }
+    /*Home divi ile ilgil genel düzenlemeler*/ 
     .home{
         width: 90%;
         margin-left: 0;
@@ -906,6 +911,7 @@ del {
     .home-button{
         padding: 6px 18px;
     }
+    /*Home içerisindeki button ile ilgili düzenlemeler*/
     .home-buttons{
         flex-direction: column;
         align-items: flex-start;
@@ -914,7 +920,7 @@ del {
         font-weight: 800;
         width: 100%;
         box-sizing: border-box;
-    }
+    } 
     .home-buttons .sign-up,
     .home-buttons .details{
         width: 100%;
@@ -928,6 +934,7 @@ del {
     .home-box{
         width: 100%;
     }
+    /*classes ile ilgili düzenlemeler*/
     .classes-container{
         display: flex;
         flex-direction: column;
@@ -959,11 +966,12 @@ del {
         font-size: 24px;
     }
     .classes-buttons{
+        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 40px;
-        width: 100%;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        width: 80%;
+        margin: 40px 0;
     }
     .classes-buttons button{
         padding: 8px 18px;
@@ -975,6 +983,7 @@ del {
         margin-top: 0;
         width: 100%;          
     }
+    /*bmi ile ilgili düzenlemeler*/
     .bmi-calculator{
         flex-direction: column;
         align-items: start;
@@ -1016,6 +1025,7 @@ del {
     .bmi-img{
         width: 100%;
     }
+    /*trainers ile ilgili düzenlemeler*/
     .trainers{
         display: flex;
         flex-direction: column;
@@ -1034,6 +1044,7 @@ del {
         margin-top: 40px;
         gap: 40px;
     }
+    /*purchase ile ilgili düzenlemeler*/
     .purchase{
         display: flex;
         flex-direction: column;
@@ -1046,6 +1057,7 @@ del {
     .trainer-box{
         width: 80%;        
     }
+    /*purchase ile ilgili düzenlemeler*/
     .purchase-boxes {
         flex-direction: column;
     }
@@ -1053,6 +1065,7 @@ del {
         flex-direction: column;           
         width: 75%;
     }
+    /*review ile ilgili düzenlemeler*/
     .review {
         display: flex;
         flex-direction: column;
@@ -1072,6 +1085,7 @@ del {
     .review-box {
         width: 100%;
     }
+    /*contact ile ilgili düzenlemeler*/
     .contact-div{
         padding: 0 30px;
     }
@@ -1104,6 +1118,7 @@ del {
     .map-div iframe {
         padding: 0 10px;
     }
+    /*footer düzenlemeleri*/
     .footer-top{
         align-items:flex-start;
         justify-content: center;
