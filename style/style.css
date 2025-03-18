@@ -924,7 +924,7 @@ del {
     .home-buttons .sign-up,
     .home-buttons .details{
         width: 100%;
-        padding: 2px 20px;
+        padding: 4px 20px;
         box-sizing: border-box;
     }
     .boxes{
@@ -945,7 +945,7 @@ del {
     }
     .section-white.classes::after {
         left: 30%; 
-        clip-path: polygon(0 0, 70% 0, 70% 65%, 20% 65%);
+        clip-path: polygon(0 0, 70% 0, 70% 63%, 20% 63%);
     }
     .classes-choosen{
         flex-direction: column;
