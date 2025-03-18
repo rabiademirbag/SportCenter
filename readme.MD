@@ -38,7 +38,7 @@ Bu proje, HTML, CSS ve JavaScript kullanılarak geliştirilmiş bir spor merkezi
 
 ## 🚀 Canlı Proje Linki
 --------------------------------------------------------------------
-[Link](sporttcenterr.netlify.app)
+[Link](https://sporttcenterr.netlify.app/)
 
 
 ## 📸 Proje Görselleri - Büyük Ekran Görünümü
