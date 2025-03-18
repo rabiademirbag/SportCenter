@@ -36,6 +36,11 @@ Bu proje, HTML, CSS ve JavaScript kullanılarak geliştirilmiş bir spor merkezi
 ✅ CSS3 – Tasarım ve stillendirme için.
 ✅ JavaScript – Dinamik işlemler ve etkileşimler için.
 
+## 🚀 Canlı Proje Linki
+--------------------------------------------------------------------
+[Link](sporttcenterr.netlify.app)
+
+
 ## 📸 Proje Görselleri - Büyük Ekran Görünümü
 ![Ana Sayfa](screenshots/home.png)
 ![Ana Sayfa](screenshots/home2.png)
