@@ -891,13 +891,13 @@ del {
         margin-left: 0;
         margin-right: 0;
         padding:0 10px;
-        margin-top: 135px;
+        margin-top: 160px;
     }
     .home-top-h1{
         width: 100%;
     }
     .home-top-h1 h1{
-        font-size: 30px;
+        font-size: 34px;
         line-height: 1.2;
         letter-spacing: 0.5px;
     }
@@ -919,6 +919,7 @@ del {
         font-weight: 800;
         width: 100%;
         box-sizing: border-box;
+        font-size: 14px;
     } 
     .home-buttons .sign-up,
     .home-buttons .details{
