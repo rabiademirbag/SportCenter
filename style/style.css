@@ -170,7 +170,7 @@ section h2::after {
     background-color: var(--text-color-2);
     color: var(--text-color-1);
     border-radius: 3px;
-    padding: 4px 18px;
+    padding: 8px 18px;
     
 }
 /*details butonu ile ilgili düzenlemeler*/
@@ -839,7 +839,7 @@ del {
     }
     /*headerı yeniden boyutlandırıyorum*/
     .header {
-    height: auto;
+    height: 100%;
     background-size:cover;
     background-position:center;
     }   
@@ -880,7 +880,7 @@ del {
     }
     /*logoyu küçültüyorum*/
     .logo img{
-        width: 80%;
+        width: 70%;
     }
     /*navbarın paddingi ayarlıyorum*/
     .navbar{
@@ -909,7 +909,7 @@ del {
         line-height: 1.4;
     }
     .home-button{
-        padding: 4px 14px;
+        padding: 2px 14px;
     }
     /*Home içerisindeki button ile ilgili düzenlemeler*/
     .home-buttons{
