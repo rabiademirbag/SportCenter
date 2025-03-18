@@ -1015,12 +1015,14 @@ del {
         justify-content: flex-start;
         align-items: center;
         gap: 5px;
+        width: 80%;
     }
     .bmi-inputs input{
         margin: 0;
         width: 80%;
         padding: 2px 2px;
     }
+
     .bmi-img{
         width: 100%;
     }
@@ -1113,6 +1115,10 @@ del {
     .form-group {
         margin-top: 20px;
         gap: 30px;
+    }
+    input::placeholder,
+    textarea::placeholder {
+    font-size: 12px; 
     }
     .map-div iframe {
         padding: 0 10px;
