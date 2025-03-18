@@ -828,18 +828,18 @@ del {
 /*Normalde hamburger menüyü gizliyorum*/
 .menu-hmbrgr {
     display: none;
-    font-size: 34px;
+    font-size: 26px;
     cursor: pointer;
 }
 /*responsive tasarım 576px altında çalışacak*/
 @media (max-width: 576px) {
     /*genel başlıkları küçülttüm*/
     section h2{
-        font-size: 26px;
+        font-size: 20px;
     }
     /*headerı yeniden boyutlandırıyorum*/
     .header {
-    height: 60vh;
+    height: auto;
     background-size:cover;
     background-position:center;
     }   
