@@ -839,7 +839,6 @@ del {
     }
     /*headerı yeniden boyutlandırıyorum*/
     .header {
-    height: 100%;
     background-size:cover;
     background-position:center;
     }   
@@ -974,10 +973,10 @@ del {
         margin: 40px 0;
     }
     .classes-buttons button{
-        padding: 8px 18px;
+        padding: 6px 16px;
         font-weight: 800;
         margin-bottom: 0;
-        font-size: 18px;
+        font-size: 16px;
     }
     .classes-choosen-photo{
         margin-top: 0;
